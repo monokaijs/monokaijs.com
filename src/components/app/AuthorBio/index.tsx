@@ -11,7 +11,12 @@ export const AuthorBio = () => {
     <div style={{margin: '16px 0'}}>
       <Divider/>
       <div className={styles.authorBio}>
-
+        <div className={styles.avatar}>
+          <Image
+            src={require('../../../assets/img/monokaijs.jpg')}
+            alt={'MonokaiJs'}
+          />
+        </div>
         <div className={styles.story}>
           <p>
             Hello there!<br/>
@@ -34,13 +39,6 @@ export const AuthorBio = () => {
             ))}
           </div>
         </div>
-        <div className={styles.avatar}>
-          <Image
-            src={require('../../../assets/img/monokaijs.jpg')}
-            alt={'MonokaiJs'}
-          />
-        </div>
-
       </div>
       <Divider/>
     </div>
