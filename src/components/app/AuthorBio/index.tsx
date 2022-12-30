@@ -4,6 +4,7 @@ import {Divider} from "../../shared/Divider";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebook, faGithub, faGitlab, faTelegram} from "@fortawesome/free-brands-svg-icons";
 import {faEnvelopeCircle} from "@fortawesome/pro-solid-svg-icons";
+import {socialLinks} from "../../../configs/personal.config";
 
 export const AuthorBio = () => {
   return (
@@ -26,21 +27,11 @@ export const AuthorBio = () => {
             I have PS5 and Nintendo Switch, but League of Legends is the only game that I interested.
           </p>
           <div className={styles.socialLinks}>
-            <a className={styles.refLink}>
-              <FontAwesomeIcon icon={faFacebook}/> Facebook
-            </a>
-            <a className={styles.refLink}>
-              <FontAwesomeIcon icon={faTelegram}/> Telegram
-            </a>
-            <a className={styles.refLink}>
-              <FontAwesomeIcon icon={faEnvelopeCircle}/> Email
-            </a>
-            <a className={styles.refLink}>
-              <FontAwesomeIcon icon={faGithub}/> GitHub
-            </a>
-            <a className={styles.refLink}>
-              <FontAwesomeIcon icon={faGitlab}/> GitLab
-            </a>
+            {socialLinks.map(sLink => (
+              <a className={styles.refLink} href={sLink.url}>
+                <FontAwesomeIcon icon={sLink.icon}/> {sLink.title}
+              </a>
+            ))}
           </div>
         </div>
         <div className={styles.avatar}>
