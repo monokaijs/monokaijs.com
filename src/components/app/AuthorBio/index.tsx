@@ -21,7 +21,7 @@ export const AuthorBio = () => {
             <br/>
             Currently working at some companies as Full-stack Web Developer, DevOps Engineer, Mobile Developer & Software
             Architect. Truly inspired by technologies, I'm working in Software Engineering as one of my hobbies.<br/>
-            I'm also play some music instruments in my free-time (Guitar, piano, flute).
+            I also play some music instruments in my free-time (Guitar, piano, flute).
           </p>
           <p>
             I have PS5 and Nintendo Switch, but League of Legends is the only game that I interested.
