@@ -24,12 +24,6 @@ a:hover {
     color: var(--primary-tint);
 }
 
-.app-layout {
-    max-width: 1200px;
-    padding: 0 16px;
-    margin: auto;
-}
-
 .blog-content {
     font-size: 14px;
 }

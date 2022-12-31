@@ -1,6 +1,7 @@
 import {PropsWithChildren} from "react";
 import {BlogHeader} from "../components/layout/Header";
 import {Footer} from "../components/layout/Footer";
+import styles from "./AppLayout.module.css";
 
 interface AppLayoutProps extends PropsWithChildren {
 
@@ -8,9 +9,9 @@ interface AppLayoutProps extends PropsWithChildren {
 
 const AppLayout = (props: AppLayoutProps) => {
   return (
-    <div className={'app-layout'}>
+    <div className={styles.appLayout}>
       <BlogHeader/>
-      <div className={'app-content'}>
+      <div className={styles.appContent}>
         {props.children}
       </div>
       <Footer/>

@@ -1,0 +1,9 @@
+.appLayout {
+    max-width: 1200px;
+    padding: 0 16px;
+    margin: auto;
+}
+
+.appContent {
+    min-height: 60vh;
+}

@@ -1,9 +1,10 @@
 import {Button} from "../../components/shared/Button";
 import {Divider} from "../../components/shared/Divider";
+import styles from './Login.module.css';
 
 const LoginPage = () => {
   return (
-    <div>
+    <div className={styles.loginForm}>
       <Divider/>
       <h3>Login</h3>
       <p>
