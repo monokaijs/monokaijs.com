@@ -39,7 +39,7 @@ export const AuthorBio = () => {
           weight={'medium'}
           size={'$xl'}
         >
-          Just an IT enthusiast. See me on:
+          Just an IT enthusiast. See me on social networks.
         </Text>
         <div className={'social-links'} style={{marginTop: 16}}>
           {socialLinks.map(link => (
@@ -47,7 +47,7 @@ export const AuthorBio = () => {
               href={link.url}
               key={link.url}
               css={{
-                color: '$accents7',
+                color: '$accents6',
                 marginRight: 16
               }}
               className={styles.socialLink}

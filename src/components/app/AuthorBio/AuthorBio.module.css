@@ -17,7 +17,6 @@
 .avatar {
     width: 200px;
     height: 200px;
-    opacity: .5;
     border-radius: 50%;
 }
 
@@ -28,4 +27,5 @@
 
 .socialLink:hover {
     scale: 140%;
+    color: var(--nextui-colors-text);
 }
