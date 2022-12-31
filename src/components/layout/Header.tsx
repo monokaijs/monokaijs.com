@@ -1,29 +1,20 @@
-
-const links = [{
-  title: 'Home',
-  path: '/'
-}, {
-  title: 'Tags',
-  path: '/tags'
-}, {
-  title: 'Projects',
-  path: '/projects'
-}, {
-  title: 'Tools',
-  path: '/tools'
-}]
+import {BlogLinks} from "../../configs/app.config";
+import styles from './Header.module.css';
 
 export const BlogHeader = () => {
   return (
-    <div className={'blog-header'}>
-      <div className={'navbar'}>
-        <div className={'title'}>
+    <div className={styles.blogHeader}>
+      <div className={styles.blogNavbar}>
+        <div className={styles.blogTitle}>
           MonokaiJs.com
         </div>
+        <div className={styles.navLinks}>
+          <a href={'/login'}>Login</a> | <a href={'/signup'}>Create Account</a>
+        </div>
       </div>
-      <div className={'blog-links'}>
-        {links.map(link => (
-          <a key={link.title + '_' + link.path} href={link.path}>{link.title}</a>
+      <div className={styles.blogLinks}>
+        {BlogLinks.map(link => (
+          <a className={styles.blogLink} key={link.title + '_' + link.path} href={link.path}>{link.title}</a>
         ))}
       </div>
     </div>

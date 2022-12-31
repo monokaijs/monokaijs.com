@@ -1,0 +1,23 @@
+
+.blogHeader {
+    padding: 16px 0;
+}
+.blogTitle {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.blogLinks {
+    margin-top: 8px;
+}
+
+.blogLink {
+    padding: 16px 16px 16px 0;
+    font-size: 14px;
+}
+
+.blogNavbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

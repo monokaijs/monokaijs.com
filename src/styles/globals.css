@@ -30,23 +30,6 @@ a:hover {
     margin: auto;
 }
 
-.blog-header {
-    padding: 16px 0;
-}
-.blog-header .title {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.blog-header .blog-links {
-    margin-top: 8px;
-}
-
-.blog-header .blog-links a {
-    padding: 16px 16px 16px 0;
-    font-size: 14px;
-}
-
 .blog-content {
     font-size: 14px;
 }
