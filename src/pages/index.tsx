@@ -1,4 +1,3 @@
-import {Divider} from "../components/shared/Divider";
 import {AuthorBio} from "../components/app/AuthorBio";
 import {PostList} from "../components/app/PostList";
 

@@ -46,3 +46,14 @@ a:hover {
 .content-container .col-right {
     width: 400px;
 }
+
+.mt-2 {
+    margin-top: 4px;
+}
+.mt-4 {
+    margin-top: 8px;
+}
+
+.pb-4 {
+    padding-bottom: 8px;
+}
