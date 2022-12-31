@@ -1,3 +1,11 @@
 .loginForm {
 
 }
+
+.loginField {
+    margin-top: 16px;
+}
+
+.formLabel {
+    font-weight: bold;
+}

@@ -11,17 +11,17 @@ const LoginPage = () => {
         Welcome back, buddy. Sign in to join conversations & explore some more tools.
       </p>
       <div className={'login-form pb-4'}>
-        <div className={'form-field'}>
-          <div>
+        <div className={styles.loginField}>
+          <div className={styles.formLabel}>
             Username:
           </div>
           <input/>
         </div>
-        <div className={'form-field'}>
-          <div>
+        <div className={styles.loginField}>
+          <div className={styles.formLabel}>
             Password:
           </div>
-          <input/>
+          <input type={'password'}/>
         </div>
         <div className={'mt-4'}>
           <Button>Login</Button>
