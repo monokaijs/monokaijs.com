@@ -12,7 +12,7 @@ body {
     font-family: 'JetBrains Mono', sans-serif;
     background-color: var(--background);
     color: var(--text-color);
-    font-size: 14px;
+    font-size: 12px;
 }
 
 a {
@@ -49,4 +49,17 @@ a:hover {
 
 .blog-content {
     font-size: 14px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+}
+.content-container .col-left {
+    flex: 1;
+    margin-right: 16px;
+}
+
+.content-container .col-right {
+    width: 400px;
 }
