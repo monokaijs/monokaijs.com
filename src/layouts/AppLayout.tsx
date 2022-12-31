@@ -1,7 +1,7 @@
-import {PropsWithChildren} from "react";
-import {BlogHeader} from "../components/layout/Header";
-import {Footer} from "../components/layout/Footer";
+import React, {PropsWithChildren} from "react";
 import styles from "./AppLayout.module.css";
+import {BlogNavbar} from "../components/layout/Navbar";
+import {Container} from "@nextui-org/react";
 
 interface AppLayoutProps extends PropsWithChildren {
 
@@ -10,11 +10,10 @@ interface AppLayoutProps extends PropsWithChildren {
 const AppLayout = (props: AppLayoutProps) => {
   return (
     <div className={styles.appLayout}>
-      <BlogHeader/>
-      <div className={styles.appContent}>
+      <BlogNavbar/>
+      <Container sm>
         {props.children}
-      </div>
-      <Footer/>
+      </Container>
     </div>
   )
 };

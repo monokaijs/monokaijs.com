@@ -4,7 +4,7 @@ import {faEnvelopeCircle} from "@fortawesome/pro-solid-svg-icons";
 export const socialLinks = [{
   title: 'Facebook',
   icon: faFacebook,
-  url: 'https://www.facebook.com'
+  url: 'https://www.facebook.com/monokaijssss'
 }, {
   title: 'Telegram',
   icon: faTelegram,
