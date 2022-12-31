@@ -3,7 +3,6 @@ import {Link, Text} from "@nextui-org/react";
 import React from "react";
 import Image from "next/image";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faFacebook} from "@fortawesome/free-brands-svg-icons";
 import {socialLinks} from "../../../configs/personal.config";
 
 export const AuthorBio = () => {
@@ -51,9 +50,10 @@ export const AuthorBio = () => {
                 color: '$accents7',
                 marginRight: 16
               }}
+              className={styles.socialLink}
               target={"_blank"}
             >
-              <FontAwesomeIcon icon={link.icon} fontSize={24}/>
+              <FontAwesomeIcon icon={link.icon}/>
             </Link>
           ))}
         </div>

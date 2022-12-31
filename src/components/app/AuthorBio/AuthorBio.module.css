@@ -1,6 +1,6 @@
 .container {
     display: flex;
-    height: 30vh;
+    height: 50vh;
     align-items: center;
     flex-direction: row;
 }
@@ -19,4 +19,13 @@
     height: 200px;
     opacity: .5;
     border-radius: 50%;
+}
+
+.socialLink {
+    font-size: 24px;
+    transition: all 200ms ease-in-out;
+}
+
+.socialLink:hover {
+    scale: 140%;
 }
