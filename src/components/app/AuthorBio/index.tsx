@@ -32,8 +32,8 @@ export const AuthorBio = () => {
             I have PS5 and Nintendo Switch, but League of Legends is the only game that I interested.
           </p>
           <div className={styles.socialLinks}>
-            {socialLinks.map(sLink => (
-              <a className={styles.refLink} href={sLink.url}>
+            {socialLinks.map((sLink, index) => (
+              <a className={styles.refLink} href={sLink.url} key={index}>
                 <FontAwesomeIcon icon={sLink.icon}/> {sLink.title}
               </a>
             ))}
