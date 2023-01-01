@@ -1,11 +1,9 @@
+.pageOuter {
+    display: flex;
+    height: 80vh;
+    align-items: center;
+}
+
 .loginForm {
 
-}
-
-.loginField {
-    margin-top: 16px;
-}
-
-.formLabel {
-    font-weight: bold;
 }

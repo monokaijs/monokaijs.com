@@ -6,13 +6,18 @@ import {faGithub} from "@fortawesome/free-brands-svg-icons";
 import {BlogLinks} from "../../configs/app.config";
 import {useAppDispatch, useAppSelector} from "../../redux/store";
 import {setTheme} from "../../redux/slices/theme.slice";
+import {useRouter} from "next/router";
 
 export const BlogNavbar = () => {
   const dispatch = useAppDispatch();
   const {theme} = useAppSelector(state => state.theme);
+  const router = useRouter();
   const switchTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     dispatch(setTheme(newTheme));
+  }
+  const openLogin = async () => {
+    await router.replace('/login')
   }
 
   return (
@@ -38,7 +43,10 @@ export const BlogNavbar = () => {
         <Link css={{color: '$accent6'}}>
           <FontAwesomeIcon icon={faGithub} fontSize={24}/>
         </Link>
-        <Button auto size={'md'} css={{backgroundColor: '$gray50', color: '$text'}}>
+        <Button
+          auto size={'md'} css={{backgroundColor: '$gray50', color: '$text'}}
+          onClick={openLogin}
+        >
           Sign In
         </Button>
       </Navbar.Content>

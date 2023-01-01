@@ -1,36 +1,37 @@
-import {Button} from "../../components/shared/Button";
-import {Divider} from "../../components/shared/Divider";
 import styles from './Login.module.css';
+import {Button, Card, Container, Grid, Input, Spacer, Text} from "@nextui-org/react";
+import React from "react";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faArrowRight} from "@fortawesome/pro-solid-svg-icons";
+import Link from "next/link";
 
 const LoginPage = () => {
   return (
-    <div className={styles.loginForm}>
-      <Divider/>
-      <h3>Login</h3>
-      <p>
-        Welcome back, buddy. Sign in to join conversations & explore some more tools.
-      </p>
-      <div className={'login-form pb-4'}>
-        <div className={styles.loginField}>
-          <div className={styles.formLabel}>
-            Username:
-          </div>
-          <input/>
-        </div>
-        <div className={styles.loginField}>
-          <div className={styles.formLabel}>
-            Password:
-          </div>
-          <input type={'password'}/>
-        </div>
-        <div className={'mt-4'}>
-          <Button>Login</Button>
-        </div>
-        <div className={'form-extra mt-4'}>
-          Don't have account? <a href={'/register'}>Create one</a>. Or you can <a href={'/recover'}>reset your password</a> if having trouble while logging in.
-        </div>
-      </div>
-      <Divider/>
+    <div className={styles.pageOuter}>
+      <Grid.Container>
+        <Grid md={6}>
+          <Container className={styles.loginForm}>
+            <h3>
+              Sign In
+            </h3>
+            <div>
+              Sign in to explore more features...
+            </div>
+            <Spacer y={2} />
+            <Input label={'Username'} placeholder={'Username'} fullWidth/>
+            <Spacer y={1} />
+            <Input label={'Username'} placeholder={'Password'} type={'password'} fullWidth/>
+            <Spacer y={1} />
+            <Button auto>
+              Continue <FontAwesomeIcon icon={faArrowRight} style={{marginLeft: 8}}/>
+            </Button>
+            <Spacer y={2}/>
+            <Text small>
+              Having trouble logging in? <Link href={'/register'}>Create account</Link> now. Or <Link href={'/recover'}>reset your password</Link>.
+            </Text>
+          </Container>
+        </Grid>
+      </Grid.Container>
     </div>
   )
 }
