@@ -7,6 +7,7 @@ import {BlogLinks} from "../../configs/app.config";
 import {useAppDispatch, useAppSelector} from "../../redux/store";
 import {setTheme} from "../../redux/slices/theme.slice";
 import {useRouter} from "next/router";
+import {AppLogo} from "../app/Logo";
 
 export const BlogNavbar = () => {
   const dispatch = useAppDispatch();
@@ -27,9 +28,7 @@ export const BlogNavbar = () => {
       maxWidth={'sm'}
     >
       <Navbar.Brand>
-        <div>
-          Logo
-        </div>
+        <AppLogo/>
       </Navbar.Brand>
       <Navbar.Content hideIn="xs">
         {BlogLinks.map(link => (
