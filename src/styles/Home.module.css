@@ -1,0 +1,26 @@
+.projectCard {
+    overflow: hidden;
+    position: relative;
+}
+
+.projectFigure {
+    position: absolute;
+    right: -16px;
+    height: 100%;
+    top: -16px;
+    transform: rotate(-20deg);
+    opacity: .4;
+    transition: all 400ms;
+}
+
+.projectCard:hover .projectFigure {
+    opacity: .6;
+    transform: rotate(-10deg);
+    top: 0;
+}
+
+.sectionHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
