@@ -16,9 +16,9 @@ export const BlogNavbar = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     dispatch(setTheme(newTheme));
   }
-  const openLogin = async () => {
-    await router.replace('/login')
-  }
+  const openLogin = async () => openLink('/login');
+
+  const openLink = async (link: string) => router.replace(link);
 
   return (
     <Navbar
@@ -33,7 +33,7 @@ export const BlogNavbar = () => {
       </Navbar.Brand>
       <Navbar.Content hideIn="xs">
         {BlogLinks.map(link => (
-          <Navbar.Link href={link.path} key={link.path}>{link.title}</Navbar.Link>
+          <Navbar.Link href={'#'} onClick={() => openLink(link.path)} key={link.path}>{link.title}</Navbar.Link>
         ))}
       </Navbar.Content>
       <Navbar.Content>
