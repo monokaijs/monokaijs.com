@@ -39,7 +39,7 @@ export const BlogNavbar = () => {
         <Link css={{color: '$accent6'}} onClick={switchTheme}>
           <FontAwesomeIcon icon={theme === 'dark' ? faMoon: faBrightness} fontSize={24}/>
         </Link>
-        <Link css={{color: '$accent6'}}>
+        <Link css={{color: '$accent6'}} href={'https://github.com/monokaijs/monokaijs.com/'} target={'_blank'}>
           <FontAwesomeIcon icon={faGithub} fontSize={24}/>
         </Link>
         <Button
